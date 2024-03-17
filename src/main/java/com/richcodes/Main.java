@@ -27,7 +27,7 @@ public class Main {
     CommandLineRunner runner(CustomerRepository customerRepository){
         return  args -> {
             Customer alex = new Customer("alex","gmail.cpm",21);
-            Customer jamila = new Customer("jamila","gmail.cpm",21);
+            Customer jamila = new Customer("jami","gmail.cpm",21);
             List<Customer> customers  = List.of(alex,jamila);
             customerRepository.saveAll(customers);
         };

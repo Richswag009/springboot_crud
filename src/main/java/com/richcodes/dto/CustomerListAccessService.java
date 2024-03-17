@@ -45,4 +45,8 @@ public class CustomerListAccessService implements CustomerDao {
        return customers.stream().anyMatch(s->s.getEmail().equals(email));
     }
 
+        public  void updateCustomer(Customer update){
+        customers.add(update);
+    }
+
 }
